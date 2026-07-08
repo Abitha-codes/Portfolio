@@ -1,0 +1,145 @@
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.about-card {
+  flex: 1;
+  max-width: 700px;
+  padding: 36px 40px;
+}
+
+.about-text {
+  font-size: 15.5px;
+  color: #94A3B8;
+  line-height: 1.84;
+}
+
+.about-text span {
+  color: #06B6D4;
+  font-weight: 600;
+}
+
+/* ===========================
+   Floating Stats
+=========================== */
+
+.stats-column {
+  flex: 0 0 220px;
+  position: relative;
+  min-height: 250px;
+}
+
+.stat-box {
+  position: absolute;
+  animation: float 5s ease-in-out infinite;
+}
+
+.stat-box:nth-child(1) {
+  top: 0px;
+  right: 0px;
+  animation-delay: 0s;
+}
+
+.stat-box:nth-child(2) {
+  top: 90px;
+  left: -50px;
+  animation-delay: 1.5s;
+}
+
+.stat-box:nth-child(3) {
+  bottom: -10px;
+  right: 50px;
+  animation-delay: 3s;
+}
+
+.stat-num {
+  display: block;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'JetBrains Mono', monospace;
+  background: linear-gradient(135deg, #6366F1, #06B6D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-lbl {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #94A3B8;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 900px) {
+  .about-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-card {
+    max-width: 100%;
+    width: 100%;
+    padding: 28px 24px;
+  }
+
+  .stats-column {
+  position: static;
+  min-height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 45px;
+}
+
+  .stat-box:nth-child(1) {
+  margin-right: 25px;
+}
+
+.stat-box:nth-child(2) {
+  margin-top: 18px;
+}
+
+.stat-box:nth-child(3) {
+  margin-left: 25px;
+}
+
+  .stat-box {
+    position: static;
+    animation: none;
+    text-align: center;
+  }
+
+  .stat-num {
+    font-size: 42px;
+  }
+
+  .stat-lbl {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding-bottom: 0px;
+  }
+}
