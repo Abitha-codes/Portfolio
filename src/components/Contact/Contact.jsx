@@ -204,7 +204,7 @@ export default function Contact() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
-        <h3 className="form-title">Let's Chat</h3>
+        <h3 className="form-title">Get In Touch</h3>
         <div className="fg">
           <label className="flbl">Name</label>
 
