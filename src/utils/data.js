@@ -8,6 +8,9 @@ import { RiSparkling2Fill } from 'react-icons/ri'
 import { MdDevices } from 'react-icons/md'
 import AiStudyAssistant from '../assets/images/ai-study-assistant.png'
 import TicTacToe from '../assets/images/tic-tac-toe.png'
+import DreamFrame from '../assets/images/dream-frame.png'
+import Portfolio from '../assets/images/portfolio.png'
+import NexusChat from '../assets/images/nexus-chat.png'
 
 export const NAV_LINKS = ['Home', 'About', 'Skills', 'Projects', 'Contact']
 
@@ -52,18 +55,9 @@ export const SKILLS = [
 ]
 
 export const PROJECTS = [
+  
   {
     id: 1,
-    title: 'Tic Tac Toe',
-    image: TicTacToe,
-    desc: 'Winner detection & score tracking',
-    tags: ['React.js', 'JavaScript', 'CSS3'],
-    demo: 'https://tic-tac-toe-azure-nine-67.vercel.app/',
-    repo: 'https://github.com/Abitha-codes/tic-tac-toe.git',
-    accent: '#6366F1',
-  },
-  {
-    id: 2,
     title: 'AI Study Assistant',
     image: AiStudyAssistant ,
     desc: 'AI-powered MERN application',
@@ -71,6 +65,46 @@ export const PROJECTS = [
     demo: 'https://ai-study-assistant-etyh.vercel.app',
     repo: 'https://github.com/Abitha-codes/ai-study-assistant.git',
     accent: '#06B6D4',
+  },
+  {
+    id: 2,
+    title: 'Dream Frame',
+    image: DreamFrame,
+    desc: 'AI-powered text-to-image web application',
+    tags: ['React', 'Node.js', 'Express.js', 'CloudflareAI'],
+    demo: 'https://dream-frame-drab.vercel.app/',
+    repo: 'https://github.com/Abitha-codes/Dream-Frame.git',
+    accent: '#06B6D4',
+  },
+  {
+    id: 3,
+    title: 'Nexus Chat',
+    image: NexusChat,
+    desc: 'Real-time MERN chat application',
+    tags: ['React', 'Socket.IO', 'AES Encryption'],
+    demo: 'https://nexus-chat-olive.vercel.app/',
+    repo: 'https://github.com/Abitha-codes/NexusChat',
+    accent: '#06B6D4',
+  },
+  {
+    id: 4,
+    title: 'Portfolio',
+    image: Portfolio,
+    desc: 'Personal portfolio website',
+    tags: ['React', 'Framer Motion', 'EmailJS', 'CSS3'],
+    demo: 'https://portfolio-blond-five-93.vercel.app/',
+    repo: 'https://github.com/Abitha-codes/Portfolio.git',
+    accent: '#6366F1',
+  },
+  {
+    id: 5,
+    title: 'Tic Tac Toe',
+    image: TicTacToe,
+    desc: 'Winner detection & score tracking',
+    tags: ['React.js', 'JavaScript', 'CSS3'],
+    demo: 'https://tic-tac-toe-azure-nine-67.vercel.app/',
+    repo: 'https://github.com/Abitha-codes/tic-tac-toe.git',
+    accent: '#6366F1',
   },
 ]
 
