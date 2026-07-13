@@ -125,7 +125,7 @@
 
   .stat-box {
     position: static;
-    animation: none;
+    /* animation: none; */
     text-align: center;
   }
 
