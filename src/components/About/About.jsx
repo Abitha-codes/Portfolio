@@ -3,8 +3,8 @@ import { useRef } from 'react'
 import './About.css'
 
 const stats = [
-  { num: '2+', label: 'Projects Built' },
-  { num: '5+', label: 'Technologies' },
+  { num: '5+', label: 'Projects Built' },
+  { num: '10+', label: 'Technologies' },
   { num: '1', label: 'Certification' },
 ]
 
